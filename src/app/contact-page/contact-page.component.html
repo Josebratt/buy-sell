@@ -3,14 +3,14 @@
     <div>
         <label>
             Your email address: 
-            <input name="email" [(ngmodel)="email"/>
+            <input name="email" [(ngModel)] = "email"/>
         </label>
     </div>
     <div>
         <label>
             Your message: 
             <textarea name="message" cols="20" rows="5"
-                        [(ngModel)]="message"></textarea>
+                        ></textarea>
         </label>
     </div>
     <button (click)="sendMessage()">Send</button>
