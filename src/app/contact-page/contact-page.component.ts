@@ -13,7 +13,7 @@ export class ContactPageComponent implements OnInit {
   email: string = '';
   message: string = '';
   listing: Listing | undefined;
-  
+
   constructor( private route: ActivatedRoute, 
                 private router: Router) { }
 
