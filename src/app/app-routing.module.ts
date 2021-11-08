@@ -9,13 +9,13 @@ import { MyListingsPageComponent } from './my-listings-page/my-listings-page.com
 import { NewListingPageComponent } from './new-listing-page/new-listing-page.component';
 
 const routes: Routes = [
-  { path: 'listings', pathMatch: 'full', component: ListingsPagesComponent },
+  { path: '', redirectTo: '/listings', pathMatch: 'full' },
+  { path: 'listings', component: ListingsPagesComponent, pathMatch: 'full' },
   { path: 'listings/:id', component: ListingDetailPageComponent },
   { path: 'contact/:id', component: ContactPageComponent },
   { path: 'edit-listing/:id', component: EditListingPageComponent },
   { path: 'my-listings', component: MyListingsPageComponent },
   { path: 'new-listing', component: NewListingPageComponent },
-  { path: '', pathMatch: 'full', redirectTo: '/listings' }
 ];
 
 @NgModule({
