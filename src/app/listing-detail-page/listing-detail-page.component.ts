@@ -10,8 +10,8 @@ import { Listing } from '../types';
 })
 export class ListingDetailPageComponent implements OnInit {
 
-  // listing: Listing | undefined;
   listing: Listing | undefined;
+  // listing: Listing;
 
   constructor( private route: ActivatedRoute ) { }
 
